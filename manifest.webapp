@@ -1,7 +1,7 @@
 {
     "version":"1.0",
-	"name": "India Pincodes",
-    "description": "This app gives you information on Pincodes (Zipcodes) of India!",
+	"name": "US Zipcodes",
+    "description": "This app gives you information on zipcodes of the US!",
     "launch_path": "/index.html",
     "icons": {
         "16": "/images/icon_016.png",

@@ -4,34 +4,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>India Pincodes</title> 
+	<title>US Zipcodes</title> 
 	<link rel="stylesheet" href="jquery.mobile-1.3.1.min.css" />
 	<script src="jquery-1.7.1.min.js"></script>
 	<script src="jquery.mobile-1.3.1.min.js"></script>
-	<script>
-		$(document).ready(function(){
-          //Invoke Pincode Search API
-		  $("#btnSearch").click(function(){
-		    pincode = $("#searchCriteria").val();
-		    var xhr = new XMLHttpRequest({mozSystem: true});
-			xhr.open("GET", "http://pin-codes.in/api/pincode/" + pincode, true);
-			xhr.onreadystatechange = function() {
-			  if (xhr.readyState == 4) {
-				obj = JSON.parse(xhr.responseText);
-				result = "<li>Post Office: " + obj.PostOffice + "</li>";
-				result += "<li>District: " + obj.District + "</li>";
-				result += "<li>State: " + obj.State + "</li>";
-				console.log(result);
-				$("#searchResults").html(result);
-				$('#searchResults').listview('refresh');
-			  }
-			}
-			xhr.send();
-		  
-		  });
-		  });
-		  
-	</script>
+	<script src="app.js"></script>
 </head> 
 	
 <body> 
